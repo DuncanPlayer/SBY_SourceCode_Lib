@@ -91,6 +91,7 @@ public class XMLMapperBuilder extends BaseBuilder {
     if (!configuration.isResourceLoaded(resource)) {
       configurationElement(parser.evalNode("/mapper"));
       configuration.addLoadedResource(resource);
+      // 从builderAssistant拿到namespace,然后注册
       bindMapperForNamespace();
     }
 
@@ -113,12 +114,16 @@ public class XMLMapperBuilder extends BaseBuilder {
       if (namespace == null || namespace.equals("")) {
         throw new BuilderException("Mapper's namespace cannot be empty");
       }
+      //  记录名称空间
       builderAssistant.setCurrentNamespace(namespace);
+      //  当前名称空间是否和其它namespace使用同一个缓存
       cacheRefElement(context.evalNode("cache-ref"));
+      //  当前mapper是否开启缓存  使用namespace作为cacheId
       cacheElement(context.evalNode("cache"));
       parameterMapElement(context.evalNodes("/mapper/parameterMap"));
       resultMapElements(context.evalNodes("/mapper/resultMap"));
       sqlElement(context.evalNodes("/mapper/sql"));
+      //  sql解析
       buildStatementFromContext(context.evalNodes("select|insert|update|delete"));
     } catch (Exception e) {
       throw new BuilderException("Error parsing Mapper XML. The XML location is '" + resource + "'. Cause: " + e, e);
