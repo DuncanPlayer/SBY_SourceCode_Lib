@@ -8,7 +8,7 @@ server:
         directBuffers: true
 spring:
     profiles:
-        active: @profileActive@
+        active: dev
     devtools:
         enabled: true
     cache:

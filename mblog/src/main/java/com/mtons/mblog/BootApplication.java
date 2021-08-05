@@ -1,10 +1,11 @@
 package com.mtons.mblog;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cache.annotation.EnableCaching;
-import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 
 /**
  * SprintBootApplication
@@ -15,9 +16,11 @@ import org.springframework.context.ApplicationContext;
 public class BootApplication {
 
     public static void main(String[] args) {
-        ApplicationContext context = SpringApplication.run(BootApplication.class, args);
+        ConfigurableApplicationContext context = new SpringApplicationBuilder(BootApplication.class)
+                .web(WebApplicationType.SERVLET)
+                .run(args);
         String serverPort = context.getEnvironment().getProperty("server.port");
-        log.info("mblog started at http://localhost:" + serverPort);
+        log.info("mblog started at http://107.182.184.86:" + serverPort);
     }
 
 }

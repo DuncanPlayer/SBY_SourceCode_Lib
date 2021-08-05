@@ -3,7 +3,7 @@ spring:
         #schema: classpath*:scripts/schema.sql
         #continue-on-error: false
         #sql-script-encoding: utf-8
-        driver-class-name: com.mysql.cj.jdbc.Driver
+        driver-class-name: com.mysql.jdbc.Driver
         url: jdbc:mysql://127.0.0.1:3306/db_mblog?useSSL=false&characterEncoding=utf8&serverTimezone=GMT%2B8
         username: root
         password: 654@Wan123
