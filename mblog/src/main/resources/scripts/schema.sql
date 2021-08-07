@@ -52,12 +52,12 @@ CREATE TABLE `mto_options` (
 -- ----------------------------
 -- Records of mto_options
 -- ----------------------------
-INSERT INTO `mto_options` VALUES ('1', 'site_name', '0', 'Mtons');
-INSERT INTO `mto_options` VALUES ('2', 'site_domain', '0', 'http://mtons.com');
-INSERT INTO `mto_options` VALUES ('3', 'site_keywords', '0', 'mtons,博客,社区');
-INSERT INTO `mto_options` VALUES ('4', 'site_description', '0', 'Mtons, 做一个有内涵的技术社区');
+INSERT INTO `mto_options` VALUES ('1', 'site_name', '0', 'Screw');
+INSERT INTO `mto_options` VALUES ('2', 'site_domain', '0', 'http://Screw.com');
+INSERT INTO `mto_options` VALUES ('3', 'site_keywords', '0', 'Screw,博客,社区');
+INSERT INTO `mto_options` VALUES ('4', 'site_description', '0', 'Screw, 做一个有内涵的技术社区');
 INSERT INTO `mto_options` VALUES ('5', 'site_metas', '0', '');
-INSERT INTO `mto_options` VALUES ('6', 'site_copyright', '0', 'Copyright © Mtons');
+INSERT INTO `mto_options` VALUES ('6', 'site_copyright', '0', 'Copyright © Screw');
 INSERT INTO `mto_options` VALUES ('7', 'site_icp', '0', '');
 INSERT INTO `mto_options` VALUES ('8', 'qq_callback', '0', '');
 INSERT INTO `mto_options` VALUES ('9', 'qq_app_id', '0', '');
