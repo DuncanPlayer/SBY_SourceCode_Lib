@@ -235,6 +235,12 @@ SELECT * FROM t_blog NATURAL JOIN t_type;
 
 
 
+&emsp;MySQL中的"My"什么意思??
+
+&emsp;MySQL的发明者名叫 Michael “Monty” Widenius，MySQL是以他女儿的名字 “My” 来命名的。对这位发明者来说，MySQL数据库就仿佛是他可爱的女儿
+
+![img](https://i.loli.net/2021/08/26/t5VvxZe8M2qoXSn.jpg)
+
 
 
 &emsp;引用：https://www.cnblogs.com/fudashi/p/7491039.html
