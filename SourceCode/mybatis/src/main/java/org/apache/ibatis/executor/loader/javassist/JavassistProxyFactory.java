@@ -153,6 +153,7 @@ public class JavassistProxyFactory implements org.apache.ibatis.executor.loader.
                 final String property = PropertyNamer.methodToProperty(methodName);
                 lazyLoader.remove(property);
               } else if (PropertyNamer.isGetter(methodName)) {
+                //  get invoke
                 final String property = PropertyNamer.methodToProperty(methodName);
                 if (lazyLoader.hasLoader(property)) {
                   lazyLoader.load(property);
