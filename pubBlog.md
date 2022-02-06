@@ -41,7 +41,7 @@
 10、结构化和非结构化数据  OK
 11、lsof  https://www.runoob.com/w3cnote/linux-check-port-usage.html  OK
 12、RY技术栈描绘 XMind  OK
-13、Maven生命周期	https://www.jianshu.com/p/fd43b3d0fdb0
+13、Maven生命周期	https://www.jianshu.com/p/fd43b3d0fdb0 OK
 14、ClassLoader
 15、github搜索技巧
 16、TCP三次握手，UDP
